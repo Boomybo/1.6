@@ -1,12 +1,20 @@
 .info-text__btn-open,
-.info-text__btn-close{
+.info-text__btn-close {
     border: 0;
     background: transparent;
     @include text;
     width: 150px;
     height: 50px;
     margin-left: 16px;
+    margin-top: 10px;
     color: $black;
+    border: 2px solid transparent; 
+}
+
+.info-text__btn-close{
+    height: 40px;
+    width: 120px;
+    margin-left: 0;
 }
 
 .info-text__btn-open::before {
@@ -30,6 +38,13 @@
     height: 24px;
     top: 5px;
     margin-right: 8px;
+}
+
+.info-text__btn-open:hover,
+.info-text__btn-close:hover {
+    background-color: #ffffff;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
 }
 
 .info-text__btn-close--hidden,

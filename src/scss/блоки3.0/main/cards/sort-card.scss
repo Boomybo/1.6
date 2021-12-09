@@ -27,6 +27,11 @@
     display: none;
 }
 
+.sort-card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 @media screen and (min-width: 768px) {
     .sort-card {
         margin-left: 24px;

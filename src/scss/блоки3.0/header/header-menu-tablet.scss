@@ -7,6 +7,8 @@
 @media screen and (min-width:768px) and (max-width:1119px) {
     .header-menu-tablet__button {
         margin-left: 16px;
+        width: 40px;
+        height: 40px;
     }
 
     .header-menu-tablet {
@@ -25,6 +27,20 @@
         background: #EAEAEA;
         margin-left: 20px;
         margin-right: 4px;
+    }
+
+    .header-menu-tablet__button:hover {
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px 0px rgba(34, 60, 80, 0.5);
+    }
+
+    .header-menu__burger-button:hover,
+    .header-menu__status-btn:hover,
+    .header-menu__bid-btn:hover {
+        width: 40px;
+        height: 40px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 0px rgba(34, 60, 80, 0.5);
     }
 }
 
