@@ -1,0 +1,28 @@
+.brands-card{
+    height: 72px;
+    width: 224px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+
+.brands-card__btn{
+    width: 45px;
+    height: 45px;
+    background-color: inherit;
+    border: none;
+    margin-right: 15px;
+}
+
+.brands-card__logo{
+    margin: 15px auto 15px 15px;
+    width: auto;
+    height: auto;
+}
+
+.brands-card--hidden {
+    display: none;
+}
+

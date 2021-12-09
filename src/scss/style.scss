@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "TT Lakes regular";
+  src: url('../fonts/TTLakes-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes bold";
+  src: url('../fonts/TTLakes-Bold.ttf');
+  font-weight: normal;
+}
+
+@mixin text {
+  font: {
+    family: "TT Lakes regular";
+    size: 16px;
+    weight: normal;
+  }
+  line-height: 24px;
+}
+
+$black: #1B1C21;
+$ligthgrey: #7E7E82;
+$pink:  #FF3E79;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  opacity: 1;
+}
+
+body {
+  background-color: #F8F8F8;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+
+@import "../scss/блоки3.0/header/header.scss";
+@import "../scss/блоки3.0/main/cards/cards.scss";
+@import "../scss/блоки3.0/main/main.scss";
+@import "../scss/блоки3.0/main/more/more.scss";
+@import "../scss/блоки3.0/main/notice/notice.scss";
+@import "../scss/блоки3.0/main/notice/special.scss";
+@import "../scss/блоки3.0/main/prices/prices.scss";
+@import "../scss/блоки3.0/main/services-caption/services-caption.scss";
+@import "../scss/блоки3.0/main/swiper/swiper.scss";
+@import "../scss/блоки3.0/footer/footer.scss";
+@import "../scss/блоки3.0/aside/aside/aside.scss";
+@import "../scss/блоки3.0/aside/modal/modal.scss";

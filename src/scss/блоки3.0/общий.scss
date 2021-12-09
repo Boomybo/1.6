@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "TT Lakes bold";
+    src: url(fonts/TTLakes-Black.eot),
+    url(fonts/TTLakes-Black.ttf);
+}
+
+@font-face {
+    font-family: "TT Lakes regular";
+    src: url(fonts/TTLakes-Regular.ttf);
+}
+
+$ligthgrey: #7E7E82;
+$black: #1B1C21;
+$pink: #FF3E79;
+
+@mixin text {
+    font: {
+      family: "TT Lakes regular";
+      size: 16px;
+      weight: normal;
+    }
+    line-height: 24px;
+  }
+  
+::-webkit-scrollbar {
+    opacity: 1;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+@import "/блоки3.0/header.scss";

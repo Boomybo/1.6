@@ -1,0 +1,78 @@
+.info-text__btn-open,
+.info-text__btn-close{
+    border: 0;
+    background: transparent;
+    @include text;
+    width: 150px;
+    height: 50px;
+    margin-left: 16px;
+    color: $black;
+}
+
+.info-text__btn-open::before {
+    content: "";
+    background-image: url(../img/expand.png);
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: 5px;
+    margin-right: 8px;
+}
+
+.info-text__btn-close::before{
+    content: "";
+    background-image: url(../img/expand.png);
+    transform: rotate(180deg);
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: 5px;
+    margin-right: 8px;
+}
+
+.info-text__btn-close--hidden,
+.info-text__btn-open--hidden,
+.info-text__description--desk-hidden {
+    display: none;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .info-text__description--mobile-hidden {
+        display: none;
+    }
+
+    .info-text__description {
+        @include text;
+        margin: 0px 16px 16px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1119px) {
+    .info-text__description--tablet-hidden,
+    .info-text__description--desk-hidden {
+        display: none;
+    }
+
+    .info-text__description--mobile,
+    .info-text__description--tablet,
+    .info-text__description--desk {
+        margin-top: 14px;
+    }
+}
+
+@media screen and (min-width:1120px) {
+    .info-text__description--desk-hidden {
+        display: none;
+    }  
+
+    .info-text__description--mobile,
+    .info-text__description--desk {
+        margin-top: 20px;
+    }
+
+    .info-text__btn-open {
+        margin-left: 0px;
+    }
+}

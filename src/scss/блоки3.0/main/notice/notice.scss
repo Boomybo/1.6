@@ -1,0 +1,14 @@
+.notice{
+    margin: 16px;
+    font-family: "TT Lakes regular";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $black;
+}
+
+@media screen and (min-width:768px){
+    .notice{
+        max-width: 400px;
+    }
+}

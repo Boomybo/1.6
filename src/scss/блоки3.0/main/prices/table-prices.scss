@@ -1,0 +1,38 @@
+.table-prices{
+    margin: 0 auto;
+    width:100%;
+    border-collapse: collapse;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.table-prices__table-head{
+    @include text;
+    font-weight: normal;
+    color: $ligthgrey;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    text-align: left;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-top: 20px;
+}
+
+.table-prices__row{
+    height: 64px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.table-prices__services,
+.table-prices__price,
+.table-prices__time,
+.table-prices__order{
+    font-family: "TT Lakes regular";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $black;
+    padding: 24px 16px;
+    border-bottom: 1px solid #EAEAEA;;
+}

@@ -1,0 +1,36 @@
+@media screen and (min-width:1121px) {
+    .aside-header__close-btn {
+        display: none;
+    }
+    .aside-header__link {
+        margin-left: 26px;
+    }
+}
+
+.aside-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aside-header__search-btn {
+    width: 40px;
+    height: 40px;
+    margin: 0 24px 0 auto;
+}
+
+.aside-header__search-btn:hover {
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 0px rgba(34, 60, 80, 0.5);
+}
+
+.aside-header__close-btn:hover {
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 0px rgba(34, 60, 80, 0.5);
+}
+
+.aside-header__close-btn {
+    margin: 0 16px 0 24px;
+    width: 40px;
+    height: 40px;
+}

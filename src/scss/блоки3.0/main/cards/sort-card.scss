@@ -1,0 +1,34 @@
+.sort-card{
+    width: 224px;
+    height: 160px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.sort-card__text{
+    @include text;
+    letter-spacing: -0.2px;
+    color: $black;
+    padding: 16px;
+}
+
+.sort-card__btn{
+    width: 50px;
+    height: 50px;
+    margin: auto 16px 16px auto;
+}
+
+.sort-card--hidden {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .sort-card {
+        margin-left: 24px;
+    }
+}

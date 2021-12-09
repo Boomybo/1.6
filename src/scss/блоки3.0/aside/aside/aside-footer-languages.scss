@@ -1,0 +1,14 @@
+.aside-footer-languages {
+    display: flex;
+    flex-direction: row;
+}
+
+.aside-footer-languages__lan {
+    margin-right: 12px;
+    text-decoration: none;
+    color: $black;
+}
+
+.aside-footer-languages__lan:hover {
+    color: $ligthgrey;
+}

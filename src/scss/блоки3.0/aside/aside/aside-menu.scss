@@ -1,0 +1,32 @@
+.aside-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-menu__item {
+    display: block;
+    @include text;
+    letter-spacing: -0.2px;
+    color: $black;
+    padding: 12px 10px;
+    position: relative;
+    list-style-type: none;
+    width: 200px;
+}
+
+.aside-menu__item:hover::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 32px;
+    background: #41F6D7;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    left: -24px;
+    top: 6px;
+}
+
+.aside-menu__item:hover {
+    color: $ligthgrey;
+    cursor: pointer;
+}

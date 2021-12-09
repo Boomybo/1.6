@@ -1,0 +1,18 @@
+@media screen and (min-width:768px) and (max-width:1119px) {
+
+    .bid-btn__text--hidden,
+    .status-btn__text--hidden {
+        display: none;
+    } 
+}
+
+@media screen and (min-width:1120px) {
+
+    .bid-btn__text, 
+    .status-btn__text {
+        margin-right: 8px;
+    }
+}
+
+@import "../header/header-menu.scss";
+@import "../header/header-menu-tablet.scss"

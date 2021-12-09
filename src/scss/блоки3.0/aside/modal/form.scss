@@ -1,0 +1,24 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    height: 48px;
+    margin: 16px 0;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    padding: 16px 12px;
+}
+
+.form__input::placeholder {
+    @include text;
+    letter-spacing: -0.2px;
+    color: #B5B6BC;
+}    
+
+.form__textarea {
+    resize: none;
+    height: 118px;
+}

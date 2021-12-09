@@ -1,0 +1,98 @@
+.more__open-btn:hover,
+.more__close-btn:hover{
+    background-color: #FFFFFF;
+    border: 3px #D9FFF5 solid;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .more {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1120px){
+    .more__open-btn,
+    .more__close-btn {
+        border: 3px solid transparent;
+        background: transparent;
+        @include text;
+        width: 150px;
+        height: 55px;
+        color: $black;
+        padding-bottom: 7px;
+        margin: 24px 0 32px 25px;
+    }
+
+    .more__open-btn::before {
+        content: "";
+        background-image: url(../img/expand.png);
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        margin-right: 8px;
+    }
+
+    .more__close-btn::before{
+        content: "";
+        background-image: url(../img/expand.png);
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: 8px;
+        margin-right: 8px;
+        transform: rotate(180deg);
+    }
+
+    .more__close-btn--hidden,
+    .more__open-btn--hidden {
+        display: none;
+        }
+}
+
+@media screen and (min-width:1121px){
+    .more__open-btn,
+    .more__close-btn {
+        border: 3px solid transparent;
+        background: transparent;
+        @include text;
+        width: 150px;
+        height: 55px;
+        margin-left: 25px;
+        color: $black;
+        margin-top: 24px;
+        padding-bottom: 7px;
+        margin-bottom: 50px;
+    }
+
+    .more__open-btn::before {
+        content: "";
+        background-image: url(../img/expand.png);
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        margin-right: 8px;
+    }
+
+    .more__close-btn::before{
+        content: "";
+        background-image: url(../img/expand.png);
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: 8px;
+        margin-right: 8px;
+        transform: rotate(180deg);
+    }
+
+    .more__open-btn--hidden,
+    .more__close-btn--hidden {
+        display: none;
+    }
+}

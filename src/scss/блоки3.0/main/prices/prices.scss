@@ -1,0 +1,12 @@
+.prices {
+    max-width: 1200px;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .prices {
+        display: none;
+    }
+}
+
+@import "../prices/order.scss";
+@import "../prices/table-prices.scss";

@@ -1,0 +1,8 @@
+.special {
+    @include text;
+    letter-spacing: -0.2px;
+    color: $black;
+    margin: 16px;
+    display: flex;
+    max-width: 350px;
+}

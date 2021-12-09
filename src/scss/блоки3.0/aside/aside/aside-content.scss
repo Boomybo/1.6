@@ -1,0 +1,40 @@
+@media screen and (min-width:370px) and (max-width:1120px){
+    .aside-content{
+        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    }
+}
+
+.aside-content--hidden {
+    visibility: hidden;
+}
+
+.aside-content {
+    width: 320px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @include text;
+    letter-spacing: -0.2px;
+    color: $black;
+    z-index: 15;
+}
+
+.aside-content__aside-header {
+    margin: 25px 0px 0;
+    flex: 0 0 auto;
+}
+
+.aside-content__aside-menu {
+    margin: 50px 0 0px 24px;
+    flex: 1 0 auto;
+}
+
+.aside-content__aside-footer {
+    margin-left: 24px;
+    flex: 0 0 auto;
+    margin-bottom: 26px;
+}

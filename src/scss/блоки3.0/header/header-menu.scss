@@ -1,0 +1,150 @@
+.header-menu__title {
+    font-family: "TT Lakes bold";
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.header-menu {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+
+
+
+.header-menu__burger-button:hover,
+.header-menu__status-btn:hover,
+.header-menu__bid-btn:hover {
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 0px rgba(34, 60, 80, 0.5);
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .header-menu__title--hidden,
+    .bid-btn__text--hidden,
+    .status-btn__text--hidden,
+    .header-menu__button-text {
+        display: none;
+    }
+
+    .header-menu__bid-btn,
+    .header-menu__burger-button,
+    .header-menu__status-btn {
+    width: 40px;
+    height: 40px;
+    }
+
+    .header-menu__burger-button,
+    .header-menu__status-btn {
+        margin: 0 16px;
+    }
+
+    .header-menu__bid-btn {
+        margin-left: auto;
+    }
+
+    .header-menu__link::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+        position: relative;
+        top: -5px;
+        margin-left: 16px;
+    }
+
+    .header-menu__title {
+        margin-top: 24px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1119px) {
+    .header-menu__title--hidden {
+        display: none;
+    }
+
+    .header-menu__title {
+        margin-top: 24px;
+    }
+
+    .header-menu__burger-button::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+        position: relative;
+        left: 14px;
+    }
+
+    .header-menu__bid-btn,
+    .header-menu__status-btn {
+        margin-left: 16px;
+    }
+
+    .header-menu__burger-button {
+        margin: 24px;
+        order: -2;
+    }
+    
+    .header-menu__icon {
+        order: 2;
+    }
+
+    .header-menu__link {
+        margin-right: auto;
+    }
+
+    .header-menu__status-btn {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (min-width:1120px) {
+    .header-menu__burger-button, 
+    .header-menu__logo {
+        display: none;
+    }
+
+    .header-menu {
+        max-width: 1120px;
+        background-color: #F8F8F8;;
+    }
+
+    .header__header-menu {
+        margin: 42px auto 8px;
+    }
+
+    .header-menu__title {
+        margin-right: auto;
+    }
+
+    .header-menu__title::before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        background: #41F6D7;
+        border-radius: 2px;
+        width: 3px;
+        height: 40px;
+        margin-right: 30px;
+    }
+
+    .header-menu__bid-btn,
+    .header-menu__status-btn {
+        @include text;
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+    }
+
+    .header-menu__icon {
+        align-self: center;
+    }
+}

@@ -1,0 +1,16 @@
+@media screen and (min-width:320px) and (max-width:767px) {
+    .swiper {
+        width: 90%;
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px){
+    .swiper{
+        display: none;
+    }
+}
+
+@import "../swiper/swiper-pagination.scss";
+@import "../swiper/swiper-slide.scss";
+@import "../swiper/swiper-wrapper.scss";
