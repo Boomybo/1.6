@@ -842,8 +842,6 @@ a {
 .aside-content {
   width: 320px;
   position: fixed;
-  left: 0;
-  top: 0;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -868,6 +866,16 @@ a {
   margin-left: 24px;
   flex: 0 0 auto;
   margin-bottom: 26px; }
+
+@media screen and (min-width: 368px) and (max-width: 1120px) {
+  .aside-content {
+    top: 0;
+    left: 0; } }
+
+@media screen and (min-width: 1121px) {
+  .aside-content {
+    position: fixed;
+    top: 0; } }
 
 .aside-footer-buttons__button {
   margin-right: 16px;
@@ -1129,6 +1137,11 @@ a {
     position: absolute;
     top: 32px;
     right: 472px; } }
+
+@media screen and (min-width: 1120px) {
+  .content-wrapper {
+    max-width: 1900px;
+    margin: 0 auto; } }
 
 @font-face {
   font-family: 'swiper-icons';
