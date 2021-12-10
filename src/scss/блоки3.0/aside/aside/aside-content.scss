@@ -11,8 +11,6 @@
 .aside-content {
     width: 320px;
     position: fixed;
-    left: 0;
-    top: 0;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -37,4 +35,18 @@
     margin-left: 24px;
     flex: 0 0 auto;
     margin-bottom: 26px;
+}
+
+@media screen and (min-width:368px) and (max-width:1120px) {
+    .aside-content {
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (min-width:1121px) {
+    .aside-content {
+        position: fixed;
+        top: 0;
+    }
 }
